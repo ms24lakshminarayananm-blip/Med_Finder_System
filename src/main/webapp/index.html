@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Availability Finder System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Demo Links Bar for Faculty Review -->
+    <div class="demo-links-bar">
+        <span><strong>Exercise Demos:</strong></span>
+        <a href="index.html">Ex 1: Homepage</a> |
+        <a href="login.jsp">Ex 4: Login</a> |
+        <a href="register.jsp">Ex 2/4: Register</a> |
+        <a href="search.jsp">Ex 3/4: Search</a> |
+        <a href="ajaxMedicineSearch.jsp">Ex 9: AJAX Search</a> |
+        <a href="cart.jsp">Ex 7: Ecommerce Cart</a> |
+        <a href="feedback.jsp">Ex 5/8A: Feedback</a> |
+        <a href="xmlDemo.jsp">Ex 8: XML/XSLT/XPath</a> |
+        <a href="activeUsers">Ex 6c: Active Users</a> |
+        <a href="visitCounter">Ex 6b: Visit Count</a> |
+        <a href="sessionTimeout">Ex 6a: Session Timeout</a>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="logo-group">
+                <span class="logo-icon">💊</span>
+                <div class="logo-text">
+                    <h1>Medicine Availability Finder</h1>
+                    <p>Real-Time Pharmacy Stock & Price Inquiry System</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="search.jsp">Search Medicines</a></li>
+                    <li><a href="ajaxMedicineSearch.jsp">AJAX Search</a></li>
+                    <li><a href="cart.jsp">Cart 🛒</a></li>
+                    <li><a href="feedback.jsp">Feedback</a></li>
+                    <li><a href="xmlDemo.jsp">XML Demo</a></li>
+                    <li><a href="login.jsp" class="btn btn-sm btn-primary">Login</a></li>
+                    <li><a href="register.jsp" class="btn btn-sm btn-success">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Exercise 2iv: Visitor Cookie Welcome Message -->
+        <div class="welcome-banner">
+            <div id="visitorWelcomeMsg">Loading visitor information...</div>
+            <button type="button" onclick="promptVisitorName()" class="btn btn-sm btn-secondary">Set Name (Cookie Demo - Ex 2vii)</button>
+        </div>
+
+        <!-- Exercise 2i: Hero Content Slider -->
+        <div class="slider-container">
+            <div class="slide-content">
+                <h2 id="sliderTitle">Find Your Medicine</h2>
+                <p id="sliderSubtitle">Search thousands of prescribed and OTC medicines across local pharmacies in real-time.</p>
+            </div>
+            <div class="slider-controls">
+                <button id="prevSlideBtn" class="btn btn-sm btn-secondary">❮ Previous</button>
+                <button id="nextSlideBtn" class="btn btn-sm btn-secondary">Next ❯</button>
+            </div>
+        </div>
+
+        <!-- Search Medicine Section (Exercise 1) -->
+        <div class="search-card">
+            <h2 class="section-title">🔍 Quick Medicine Finder</h2>
+            <form action="medicine" method="get" class="search-form">
+                <div class="form-group">
+                    <label for="searchQuery">Medicine Name / Keyword:</label>
+                    <input type="text" id="searchQuery" name="query" class="form-control" placeholder="e.g. Paracetamol, Amoxicillin">
+                </div>
+                <div class="form-group">
+                    <label for="categorySelect">Category:</label>
+                    <select id="categorySelect" name="category" class="form-control">
+                        <option value="All">All Categories</option>
+                        <option value="Fever & Pain">Fever & Pain</option>
+                        <option value="Antibiotic">Antibiotic</option>
+                        <option value="Allergy">Allergy</option>
+                        <option value="Gastric">Gastric</option>
+                        <option value="Cold & Cough">Cold & Cough</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="priceMax">Max Price (₹):</label>
+                    <input type="number" id="priceMax" name="price" class="form-control" placeholder="e.g. 100">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Search Availability</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Featured Medicines Section -->
+        <h2 class="section-title">
+            <span>✨ Featured Medicines</span>
+            <input type="text" id="quickSearchInput" class="form-control" style="max-width:250px; font-size:0.85rem;" placeholder="Filter cards (JS Input Event)...">
+        </h2>
+
+        <div class="cards-grid">
+            <div class="card medicine-card-item" data-name="Paracetamol 650mg">
+                <div>
+                    <h3 class="card-title">Paracetamol 650mg</h3>
+                    <span class="card-category">Fever & Pain</span>
+                    <p class="card-price">₹25.00</p>
+                    <p><strong>Stock:</strong> <span class="badge badge-available">150 Available</span></p>
+                    <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> Apollo Pharmacy (MG Road)</p>
+                </div>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Paracetamol 650mg', 'Fever & Pain', 25.0, 150, 'Apollo Pharmacy')">View Dynamic (Ex 2iii)</button>
+                    <a href="search.jsp?query=Paracetamol" class="btn btn-sm btn-primary">Check Details</a>
+                </div>
+            </div>
+
+            <div class="card medicine-card-item" data-name="Amoxicillin 500mg">
+                <div>
+                    <h3 class="card-title">Amoxicillin 500mg</h3>
+                    <span class="card-category">Antibiotic</span>
+                    <p class="card-price">₹120.00</p>
+                    <p><strong>Stock:</strong> <span class="badge badge-available">80 Available</span></p>
+                    <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> Apollo Pharmacy (MG Road)</p>
+                </div>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Amoxicillin 500mg', 'Antibiotic', 120.0, 80, 'Apollo Pharmacy')">View Dynamic (Ex 2iii)</button>
+                    <a href="search.jsp?query=Amoxicillin" class="btn btn-sm btn-primary">Check Details</a>
+                </div>
+            </div>
+
+            <div class="card medicine-card-item" data-name="Cetirizine 10mg">
+                <div>
+                    <h3 class="card-title">Cetirizine 10mg</h3>
+                    <span class="card-category">Allergy</span>
+                    <p class="card-price">₹35.00</p>
+                    <p><strong>Stock:</strong> <span class="badge badge-available">200 Available</span></p>
+                    <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> MedPlus Healthcare (Anna Nagar)</p>
+                </div>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Cetirizine 10mg', 'Allergy', 35.0, 200, 'MedPlus Healthcare')">View Dynamic (Ex 2iii)</button>
+                    <a href="search.jsp?query=Cetirizine" class="btn btn-sm btn-primary">Check Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container for Exercise 2iii Dynamic Content Display -->
+        <div id="dynamicMedDetails" style="margin-bottom: 2rem;"></div>
+
+        <!-- Registered Pharmacies Information -->
+        <h2 class="section-title">🏥 Partner Pharmacies</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3 class="card-title">Apollo Pharmacy</h3>
+                <p><strong>Location:</strong> MG Road, Main City</p>
+                <p><strong>Phone:</strong> 044-28394001</p>
+                <p><strong>Status:</strong> <span class="badge badge-available">Open 24/7</span></p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">MedPlus Healthcare</h3>
+                <p><strong>Location:</strong> Anna Nagar, West Wing</p>
+                <p><strong>Phone:</strong> 044-26218002</p>
+                <p><strong>Status:</strong> <span class="badge badge-available">Open (8 AM - 10 PM)</span></p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Care & Cure Medicals</h3>
+                <p><strong>Location:</strong> Gandhi Street, Central</p>
+                <p><strong>Phone:</strong> 044-24359003</p>
+                <p><strong>Status:</strong> <span class="badge badge-available">Open (9 AM - 9 PM)</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Medicine Availability Finder System</strong> &copy; 3rd Year CSE Web Technology Project</p>
+        <p>Built with Java Servlets, JSP, JDBC, MySQL, HTML5, CSS3, JavaScript, AJAX, XML & PHP</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

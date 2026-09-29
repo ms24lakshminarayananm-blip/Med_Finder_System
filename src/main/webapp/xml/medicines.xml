@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="medicines.xsd">
+    <medicine>
+        <id>1</id>
+        <name>Paracetamol 650mg</name>
+        <category>Fever</category>
+        <price>25.00</price>
+        <availability>Available</availability>
+        <pharmacy>Apollo Pharmacy</pharmacy>
+    </medicine>
+    <medicine>
+        <id>2</id>
+        <name>Amoxicillin 500mg</name>
+        <category>Antibiotic</category>
+        <price>120.00</price>
+        <availability>Available</availability>
+        <pharmacy>Apollo Pharmacy</pharmacy>
+    </medicine>
+    <medicine>
+        <id>3</id>
+        <name>Cetirizine 10mg</name>
+        <category>Allergy</category>
+        <price>35.00</price>
+        <availability>Available</availability>
+        <pharmacy>MedPlus Healthcare</pharmacy>
+    </medicine>
+    <medicine>
+        <id>4</id>
+        <name>Ibuprofen 400mg</name>
+        <category>Fever</category>
+        <price>45.00</price>
+        <availability>Available</availability>
+        <pharmacy>MedPlus Healthcare</pharmacy>
+    </medicine>
+    <medicine>
+        <id>5</id>
+        <name>Azithromycin 500mg</name>
+        <category>Antibiotic</category>
+        <price>180.00</price>
+        <availability>Out of Stock</availability>
+        <pharmacy>Care &amp; Cure Medicals</pharmacy>
+    </medicine>
+    <medicine>
+        <id>6</id>
+        <name>Pantoprazole 40mg</name>
+        <category>Gastric</category>
+        <price>95.00</price>
+        <availability>Available</availability>
+        <pharmacy>Care &amp; Cure Medicals</pharmacy>
+    </medicine>
+</medicines>

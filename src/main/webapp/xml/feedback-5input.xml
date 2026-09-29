@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedbacks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="feedback.xsd">
+    <feedback>
+        <name>John Doe</name>
+        <email>john@example.com</email>
+        <rating>5</rating>
+        <comments>Great service! Checked Paracetamol availability and purchased instantly.</comments>
+        <date>2026-09-20</date>
+    </feedback>
+    <feedback>
+        <name>Alice Smith</name>
+        <email>alice@gmail.com</email>
+        <rating>4</rating>
+        <comments>Clean interface and fast search functionality.</comments>
+        <date>2026-09-22</date>
+    </feedback>
+    <feedback>
+        <name>David Miller</name>
+        <email>david@yahoo.com</email>
+        <rating>5</rating>
+        <comments>Saved time by verifying stock before leaving home.</comments>
+        <date>2026-09-25</date>
+    </feedback>
+</feedbacks>

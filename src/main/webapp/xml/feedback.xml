@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE feedbacks SYSTEM "feedback.dtd">
+<feedbacks>
+    <feedback>
+        <name>John Doe</name>
+        <rating>5</rating>
+        <comments>Excellent medicine finder app! Quick search and verified availability.</comments>
+    </feedback>
+    <feedback>
+        <name>Alice Smith</name>
+        <rating>4</rating>
+        <comments>Very helpful for checking stock before going to the pharmacy.</comments>
+    </feedback>
+    <feedback>
+        <name>Robert Brown</name>
+        <rating>5</rating>
+        <comments>Accurate prices and pharmacy contact numbers displayed.</comments>
+    </feedback>
+</feedbacks>
