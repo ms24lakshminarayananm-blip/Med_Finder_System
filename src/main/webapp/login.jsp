@@ -79,7 +79,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 4: Servlet + JSP + MySQL Login</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

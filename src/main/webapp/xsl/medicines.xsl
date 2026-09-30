@@ -16,7 +16,7 @@
             </style>
         </head>
         <body>
-            <h2>XML Medicine Catalog (Exercise 8B XSLT Transformation)</h2>
+            <h2>XML Medicine Catalog</h2>
             <table>
                 <tr>
                     <th>ID</th>

@@ -14,14 +14,14 @@
                 <span class="logo-icon">⏱️</span>
                 <div class="logo-text">
                     <h1>Medicine Availability Finder</h1>
-                    <p>Session Timeout Management (Exercise 6a)</p>
+                    <p>Session Timeout Management</p>
                 </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="login.jsp">Login</a></li>
-                    <li><a href="sessionTimeout" class="active">Session Timeout Demo</a></li>
+                    <li><a href="sessionTimeout" class="active">Session Timeout</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +44,7 @@
             </div>
 
             <div style="background:#f8fafc; border:1px solid var(--border-color); padding:1rem; border-radius:6px; text-align:left; font-size:0.9rem; margin-bottom:1.5rem;">
-                <strong>⚙️ Technical Configuration (Exercise 6a):</strong>
+                <strong>⚙️ Technical Configuration:</strong>
                 <ul style="margin-left:1.25rem; margin-top:0.4rem;">
                     <li>Configured in <code>web.xml</code>: <code>&lt;session-timeout&gt;2&lt;/session-timeout&gt;</code> (2 minutes).</li>
                     <li>Programmatically set in <code>SessionTimeoutServlet</code>: <code>session.setMaxInactiveInterval(120);</code>.</li>
@@ -59,7 +59,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 6a: Session Timeout Feature</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -8,22 +8,6 @@
 </head>
 <body>
 
-    <!-- Demo Links Bar for Faculty Review -->
-    <div class="demo-links-bar">
-        <span><strong>Exercise Demos:</strong></span>
-        <a href="index.html">Ex 1: Homepage</a> |
-        <a href="login.jsp">Ex 4: Login</a> |
-        <a href="register.jsp">Ex 2/4: Register</a> |
-        <a href="search.jsp">Ex 3/4: Search</a> |
-        <a href="ajaxMedicineSearch.jsp">Ex 9: AJAX Search</a> |
-        <a href="cart.jsp">Ex 7: Ecommerce Cart</a> |
-        <a href="feedback.jsp">Ex 5/8A: Feedback</a> |
-        <a href="xmlDemo.jsp">Ex 8: XML/XSLT/XPath</a> |
-        <a href="activeUsers">Ex 6c: Active Users</a> |
-        <a href="visitCounter">Ex 6b: Visit Count</a> |
-        <a href="sessionTimeout">Ex 6a: Session Timeout</a>
-    </div>
-
     <!-- Header & Navigation -->
     <header>
         <div class="header-container">
@@ -52,13 +36,13 @@
     <!-- Main Container -->
     <div class="main-container">
 
-        <!-- Exercise 2iv: Visitor Cookie Welcome Message -->
+        <!-- Visitor Welcome Message -->
         <div class="welcome-banner">
             <div id="visitorWelcomeMsg">Loading visitor information...</div>
-            <button type="button" onclick="promptVisitorName()" class="btn btn-sm btn-secondary">Set Name (Cookie Demo - Ex 2vii)</button>
+            <button type="button" onclick="promptVisitorName()" class="btn btn-sm btn-secondary">Set Visitor Name</button>
         </div>
 
-        <!-- Exercise 2i: Hero Content Slider -->
+        <!-- Hero Content Slider -->
         <div class="slider-container">
             <div class="slide-content">
                 <h2 id="sliderTitle">Find Your Medicine</h2>
@@ -70,7 +54,7 @@
             </div>
         </div>
 
-        <!-- Search Medicine Section (Exercise 1) -->
+        <!-- Search Medicine Section -->
         <div class="search-card">
             <h2 class="section-title">🔍 Quick Medicine Finder</h2>
             <form action="medicine" method="get" class="search-form">
@@ -102,7 +86,7 @@
         <!-- Featured Medicines Section -->
         <h2 class="section-title">
             <span>✨ Featured Medicines</span>
-            <input type="text" id="quickSearchInput" class="form-control" style="max-width:250px; font-size:0.85rem;" placeholder="Filter cards (JS Input Event)...">
+            <input type="text" id="quickSearchInput" class="form-control" style="max-width:250px; font-size:0.85rem;" placeholder="Filter cards...">
         </h2>
 
         <div class="cards-grid">
@@ -115,7 +99,7 @@
                     <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> Apollo Pharmacy (MG Road)</p>
                 </div>
                 <div style="margin-top:1rem; display:flex; gap:0.5rem;">
-                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Paracetamol 650mg', 'Fever & Pain', 25.0, 150, 'Apollo Pharmacy')">View Dynamic (Ex 2iii)</button>
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Paracetamol 650mg', 'Fever & Pain', 25.0, 150, 'Apollo Pharmacy')">Quick View</button>
                     <a href="search.jsp?query=Paracetamol" class="btn btn-sm btn-primary">Check Details</a>
                 </div>
             </div>
@@ -129,7 +113,7 @@
                     <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> Apollo Pharmacy (MG Road)</p>
                 </div>
                 <div style="margin-top:1rem; display:flex; gap:0.5rem;">
-                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Amoxicillin 500mg', 'Antibiotic', 120.0, 80, 'Apollo Pharmacy')">View Dynamic (Ex 2iii)</button>
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Amoxicillin 500mg', 'Antibiotic', 120.0, 80, 'Apollo Pharmacy')">Quick View</button>
                     <a href="search.jsp?query=Amoxicillin" class="btn btn-sm btn-primary">Check Details</a>
                 </div>
             </div>
@@ -143,7 +127,7 @@
                     <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.4rem;"><strong>Pharmacy:</strong> MedPlus Healthcare (Anna Nagar)</p>
                 </div>
                 <div style="margin-top:1rem; display:flex; gap:0.5rem;">
-                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Cetirizine 10mg', 'Allergy', 35.0, 200, 'MedPlus Healthcare')">View Dynamic (Ex 2iii)</button>
+                    <button class="btn btn-sm btn-secondary" onclick="showMedicineDetailsDynamic('Cetirizine 10mg', 'Allergy', 35.0, 200, 'MedPlus Healthcare')">Quick View</button>
                     <a href="search.jsp?query=Cetirizine" class="btn btn-sm btn-primary">Check Details</a>
                 </div>
             </div>

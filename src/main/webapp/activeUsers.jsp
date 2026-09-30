@@ -20,7 +20,7 @@
                 <span class="logo-icon">👥</span>
                 <div class="logo-text">
                     <h1>Medicine Availability Finder</h1>
-                    <p>Live Active Users Monitor (Exercise 6c)</p>
+                    <p>Live Active Users Monitor</p>
                 </div>
             </div>
             <nav>
@@ -45,7 +45,7 @@
             </div>
 
             <div style="background:#f8fafc; border:1px solid var(--border-color); padding:1rem; border-radius:6px; text-align:left; font-size:0.9rem;">
-                <strong>💡 How it works (Exercise 6c):</strong>
+                <strong>💡 How it works:</strong>
                 <ul style="margin-left:1.25rem; margin-top:0.4rem;">
                     <li><code>ActiveUserListener</code> implements <code>HttpSessionListener</code> interface.</li>
                     <li>Increments <code>AtomicInteger</code> counter whenever <code>sessionCreated()</code> fires.</li>
@@ -61,7 +61,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 6c: Track Currently Logged-in Users</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

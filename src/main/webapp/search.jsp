@@ -37,9 +37,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="search.jsp" class="active">Search</a></li>
-                    <li><a href="ajaxMedicineSearch.jsp">AJAX Search (Ex 9)</a></li>
+                    <li><a href="search.jsp" class="active">Search Medicines</a></li>
+                    <li><a href="ajaxMedicineSearch.jsp">AJAX Search</a></li>
                     <li><a href="cart.jsp">Cart 🛒</a></li>
+                    <li><a href="feedback.jsp">Feedback</a></li>
+                    <li><a href="xmlDemo.jsp">XML Demo</a></li>
                     <li><a href="home.jsp">Dashboard</a></li>
                 </ul>
             </nav>
@@ -50,7 +52,7 @@
         <div class="search-card">
             <h2 class="section-title">
                 <span>🔍 Medicine Search &amp; Availability Check</span>
-                <a href="ajaxMedicineSearch.jsp" class="btn btn-sm btn-secondary">Switch to AJAX Mode (Ex 9)</a>
+                <a href="ajaxMedicineSearch.jsp" class="btn btn-sm btn-secondary">Switch to AJAX Mode</a>
             </h2>
 
             <!-- Form sending data to Servlet (Exercise 3, 4, 5) -->
@@ -126,7 +128,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 4: Servlet + DAO + MySQL Search</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

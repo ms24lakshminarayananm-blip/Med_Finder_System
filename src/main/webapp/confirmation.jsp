@@ -47,19 +47,17 @@
                 <div class="success-alert" style="margin-bottom: 1.5rem;"><%= successMsg %></div>
             <% } %>
 
-            <!-- Exercise 6d: Display Form Data Stored in Session -->
             <% if (sessionName != null || sessionEmail != null) { %>
                 <div style="background:#f1f5f9; border:1px solid var(--border-color); padding:1rem; border-radius:6px; margin-bottom:1.5rem; text-align:left;">
-                    <h3 style="color:var(--secondary-color); margin-bottom:0.5rem;">💾 Data Stored in Session (Exercise 6d):</h3>
+                    <h3 style="color:var(--secondary-color); margin-bottom:0.5rem;">💾 Data Stored in Session:</h3>
                     <p><strong>Name:</strong> <%= sessionName != null ? sessionName : "N/A" %></p>
                     <p><strong>Email:</strong> <%= sessionEmail != null ? sessionEmail : "N/A" %></p>
                 </div>
             <% } %>
 
-            <!-- Exercise 6e: Delete Cookie Confirmation -->
             <% if (deletedCookieName != null) { %>
                 <div style="background:#fee2e2; color:#b91c1c; padding:1rem; border-radius:6px; margin-bottom:1.5rem; text-align:left;">
-                    <strong>🍪 Cookie Deletion (Exercise 6e):</strong><br>
+                    <strong>🍪 Cookie Deletion:</strong><br>
                     Cookie <code><%= deletedCookieName %></code> maxAge was set to 0 and deleted from response headers.
                 </div>
             <% } %>
@@ -72,7 +70,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 5 &amp; 6 Confirmation Page</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

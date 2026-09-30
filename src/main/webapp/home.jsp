@@ -32,7 +32,7 @@
                     <li><a href="search.jsp">Search Medicines</a></li>
                     <li><a href="cart.jsp">Cart 🛒</a></li>
                     <li><a href="feedback.jsp">Feedback</a></li>
-                    <li><a href="activeUsers">Active Users (Ex 6c)</a></li>
+                    <li><a href="activeUsers">Active Users</a></li>
                     <li><a href="logout" class="btn btn-sm btn-danger">Logout</a></li>
                 </ul>
             </nav>
@@ -40,7 +40,7 @@
     </header>
 
     <div class="main-container">
-        <!-- Welcome Banner & Cookie Visit Counter (Ex 6b) -->
+        <!-- Welcome Banner & Cookie Visit Counter -->
         <div class="welcome-banner">
             <div>
                 <% if (currentUser != null) { %>
@@ -55,10 +55,10 @@
             <div style="text-align: right;">
                 <% if (visitCountAttr != null) { %>
                     <span class="badge badge-available" style="font-size:0.9rem; padding:0.5rem 0.8rem;">
-                        📊 Cookie Visit Counter (Ex 6b): You have visited this page <%= visitCountAttr %> times.
+                        📊 Visit Counter: You have visited this page <%= visitCountAttr %> times.
                     </span>
                 <% } else { %>
-                    <a href="visitCounter" class="btn btn-sm btn-primary">Check Visit Counter Cookie (Ex 6b)</a>
+                    <a href="visitCounter" class="btn btn-sm btn-primary">Check Visit Counter</a>
                 <% } %>
             </div>
         </div>
@@ -78,14 +78,14 @@
             </div>
 
             <div class="card">
-                <h3 class="card-title">⏱️ Session Timeout Demo</h3>
-                <p>Test 2-minute inactivity timeout configuration (Ex 6a).</p>
+                <h3 class="card-title">⏱️ Session Timeout</h3>
+                <p>Test inactivity session timeout configuration.</p>
                 <a href="sessionTimeout" class="btn btn-secondary" style="margin-top:1rem;">Session Config</a>
             </div>
 
             <div class="card">
-                <h3 class="card-title">🍪 Delete Cookie Demo</h3>
-                <p>Demonstrate deleting cookie by setting maxAge to 0 (Ex 6e).</p>
+                <h3 class="card-title">🍪 Manage Visit Cookie</h3>
+                <p>Clear visit tracking cookie.</p>
                 <a href="deleteCookie?cookieName=visitCount" class="btn btn-danger" style="margin-top:1rem;">Delete Visit Cookie</a>
             </div>
         </div>
@@ -130,11 +130,11 @@
             </div>
         <% } %>
 
-        <!-- Session Data Form (Exercise 6d) -->
-        <h2 class="section-title">💾 Store Form Data in Session (Exercise 6d)</h2>
+        <!-- Session Data Form -->
+        <h2 class="section-title">💾 Save Profile Preferences in Session</h2>
         <div class="search-card" style="max-width: 600px; margin: 0 auto 2rem auto;">
             <p style="margin-bottom:1rem; font-size:0.9rem; color:var(--text-muted);">
-                Submit this form to test <code>UserDataServlet</code> storing name & email in <code>session.setAttribute()</code>.
+                Submit this form to store name & email in session.
             </p>
             <form action="userData" method="post" class="search-form">
                 <div class="form-group">
@@ -154,7 +154,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; User Dashboard (Exercise 4, 5, 6)</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

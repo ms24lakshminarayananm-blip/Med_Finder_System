@@ -34,7 +34,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="search.jsp">Search Medicines</a></li>
                     <li><a href="feedback.jsp" class="active">Feedback</a></li>
-                    <li><a href="xmlDemo.jsp">XML Feedback View (Ex 8A)</a></li>
+                    <li><a href="xmlDemo.jsp">XML Feedback View</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +47,7 @@
             <div class="card">
                 <h3 class="section-title">💬 Submit Your Feedback</h3>
 
-                <!-- Error Alert Box for JS Form Validation (Ex 2viii Rule 6 & 7) -->
+                <!-- Error Alert Box for JS Form Validation -->
                 <div id="fbError" class="error-alert" style="display:none;"></div>
 
                 <%
@@ -70,7 +70,6 @@
                         <input type="email" id="fbEmail" name="email" class="form-control" placeholder="e.g. user@example.com">
                     </div>
 
-                    <!-- Rule 6: Rating required -->
                     <div class="form-group" style="margin-bottom:1rem;">
                         <label for="fbRating">Rating (1 to 5 Stars) *:</label>
                         <select id="fbRating" name="rating" class="form-control" required>
@@ -83,7 +82,6 @@
                         </select>
                     </div>
 
-                    <!-- Rule 7: Comments required -->
                     <div class="form-group" style="margin-bottom:1.5rem;">
                         <label for="fbComments">Comments / Feedback *:</label>
                         <textarea id="fbComments" name="comments" class="form-control" rows="4" placeholder="Share your experience finding medicine availability..." required></textarea>
@@ -97,7 +95,7 @@
             <div class="card">
                 <h3 class="section-title">
                     <span>🌟 Recent Community Feedback</span>
-                    <a href="xmlDemo.jsp" class="btn btn-sm btn-secondary">View XML XSLT (Ex 8A)</a>
+                    <a href="xmlDemo.jsp" class="btn btn-sm btn-secondary">View XML XSLT</a>
                 </h3>
 
                 <div style="max-height: 450px; overflow-y: auto; display:flex; flex-direction:column; gap:1rem;">
@@ -122,7 +120,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 5 &amp; 8A: Feedback System</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

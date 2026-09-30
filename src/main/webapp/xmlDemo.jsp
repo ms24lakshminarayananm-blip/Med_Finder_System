@@ -20,7 +20,7 @@
                 <span class="logo-icon">📄</span>
                 <div class="logo-text">
                     <h1>Medicine Availability Finder</h1>
-                    <p>XML Processing Suite (Exercise 8A &amp; 8B)</p>
+                    <p>XML Processing Suite</p>
                 </div>
             </div>
             <nav>
@@ -28,14 +28,14 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="search.jsp">Search Medicines</a></li>
                     <li><a href="feedback.jsp">Feedback</a></li>
-                    <li><a href="xmlDemo.jsp" class="active">XML Demo (Ex 8)</a></li>
+                    <li><a href="xmlDemo.jsp" class="active">XML Demo</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="main-container">
-        <h2 class="section-title">📄 Exercise 8 XML / DTD / XSD / XSLT / XPath Demonstrations</h2>
+        <h2 class="section-title">📄 XML / DTD / XSD / XSLT / XPath Processing</h2>
 
         <%-- Function for XSLT transformation --%>
         <%!
@@ -57,9 +57,9 @@
             }
         %>
 
-        <!-- 1. EXERCISE 8A: XML FEEDBACK (3-INPUT DTD & 5-INPUT XSD) -->
+        <!-- 1. XML FEEDBACK (3-INPUT DTD & 5-INPUT XSD) -->
         <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:8px; padding:1.5rem; margin-bottom:2rem; box-shadow:var(--shadow);">
-            <h3 style="color:var(--primary-color); margin-bottom:1rem;">Exercise 8A: XML Feedback Applications</h3>
+            <h3 style="color:var(--primary-color); margin-bottom:1rem;">XML Feedback Applications</h3>
 
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
 
@@ -84,9 +84,9 @@
             </div>
         </div>
 
-        <!-- 2. EXERCISE 8B: XML MEDICINE DATABASE & XPATH SEARCHING -->
+        <!-- 2. XML MEDICINE DATABASE & XPATH SEARCHING -->
         <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:8px; padding:1.5rem; margin-bottom:2rem; box-shadow:var(--shadow);">
-            <h3 style="color:var(--primary-color); margin-bottom:1rem;">Exercise 8B: XML Medicine Database &amp; XPath Searches</h3>
+            <h3 style="color:var(--primary-color); margin-bottom:1rem;">XML Medicine Database &amp; XPath Searches</h3>
 
             <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:1rem; border-radius:6px; margin-bottom:1.5rem;">
                 <h4 style="color:var(--text-dark); margin-bottom:0.5rem;">Complete XSLT Transformed Medicine Catalog (medicines.xml + medicines.xsd):</h4>
@@ -179,7 +179,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 8A &amp; 8B: XML Processing</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

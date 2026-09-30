@@ -14,15 +14,17 @@
                 <span class="logo-icon">⚡</span>
                 <div class="logo-text">
                     <h1>Medicine Availability Finder</h1>
-                    <p>Dynamic AJAX Search Application (Exercise 9A &amp; 9B)</p>
+                    <p>Dynamic AJAX Search Application</p>
                 </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="search.jsp">Standard Search</a></li>
-                    <li><a href="ajaxMedicineSearch.jsp" class="active">AJAX Search (Ex 9)</a></li>
+                    <li><a href="search.jsp">Search Medicines</a></li>
+                    <li><a href="ajaxMedicineSearch.jsp" class="active">AJAX Search</a></li>
                     <li><a href="cart.jsp">Cart 🛒</a></li>
+                    <li><a href="feedback.jsp">Feedback</a></li>
+                    <li><a href="xmlDemo.jsp">XML Demo</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,7 +69,7 @@
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
             <div id="ajaxStatusMsg" style="font-weight:600; color:var(--primary-color);">Ready to search.</div>
             <div>
-                <!-- Exercise 9B: PHP Endpoint Demonstration Button -->
+                <!-- PHP Endpoint Demonstration Button -->
                 <button type="button" onclick="fetchFromPhpEndpoint()" class="btn btn-sm btn-secondary">Test PHP Endpoint (php/medicineData.php)</button>
             </div>
         </div>
@@ -79,7 +81,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 9A &amp; 9B: Dynamic AJAX Application</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>

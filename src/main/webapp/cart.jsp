@@ -22,14 +22,17 @@
                 <span class="logo-icon">💊</span>
                 <div class="logo-text">
                     <h1>Medicine Availability Finder</h1>
-                    <p>Shopping Cart (Exercise 7)</p>
+                    <p>Shopping Cart</p>
                 </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="search.jsp">Search Medicines</a></li>
+                    <li><a href="ajaxMedicineSearch.jsp">AJAX Search</a></li>
                     <li><a href="cart.jsp" class="active">Cart 🛒</a></li>
+                    <li><a href="feedback.jsp">Feedback</a></li>
+                    <li><a href="xmlDemo.jsp">XML Demo</a></li>
                     <li><a href="home.jsp">Dashboard</a></li>
                 </ul>
             </nav>
@@ -102,7 +105,7 @@
     </div>
 
     <footer>
-        <p>Medicine Availability Finder &copy; Exercise 7: Ecommerce Cart Functionality</p>
+        <p>Medicine Availability Finder &copy; Real-Time Pharmacy Stock &amp; Price Inquiry System</p>
     </footer>
 
     <script src="js/script.js"></script>
